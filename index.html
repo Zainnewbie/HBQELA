@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday Sayang 🎉</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="floaters" aria-hidden="true"></div>
+
+  <main class="card" role="main">
+    <header class="header">
+      <h1 class="title">Assalamualaikum, Selamat Ulang Tahun 🩵</h1>
+      <div class="sub">Happy 20th Birthday 🎉🐼🐬</div>
+    </header>
+
+    <div class="emoji-line">🐼 🐬 💙 💌 🩵</div>
+
+    <section class="scroll-box" id="scrollBox" tabindex="0" aria-label="Ucapan ulang tahun">
+      <p class="message" id="message"></p>
+    </section>
+
+    <div class="scroll-nav">
+      <button class="nav-btn" id="upBtn" aria-label="Gulir ke atas">⬆ Atas</button>
+      <button class="nav-btn" id="downBtn" aria-label="Gulir ke bawah">⬇ Bawah</button>
+      <button class="nav-btn" id="topBtn" aria-label="Ke paling atas">⮝ Paling Atas</button>
+      <button class="nav-btn" id="bottomBtn" aria-label="Ke paling bawah">⮟ Paling Bawah</button>
+    </div>
+
+    <div class="emoji-line">💙 🎈 💕 🐼 🐬</div>
+
+    <div class="actions">
+      <button class="love-button" onclick="spawnHearts()">I LOVE YOU 💖</button>
+      <button class="mute-button" id="muteBtn" aria-pressed="false">🔊 Mute/Unmute</button>
+    </div>
+  </main>
+
+  <img src="img_left.jpg" class="bottom-image left" alt="gambar kiri">
+  <img src="img_right.png" class="bottom-image right" alt="gambar kanan">
+
+  <audio id="bgm" src="audio.mp3" loop playsinline preload="auto"></audio>
+
+  <div id="audio-cta" class="audio-cta hidden" aria-hidden="true">
+    <button id="play-btn">Putar Musik 🎵</button>
+    <small>Jika musik tidak otomatis, klik tombol ini.</small>
+  </div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
