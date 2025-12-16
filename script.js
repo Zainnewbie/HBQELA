@@ -1,13 +1,13 @@
 // Birthday page interactions and animations
-const MESSAGE = `Assalamualaikum dedekk, barakallah fi umrikk... Pibesdeyyy yg ke 20🥳🥳🫶🏻, ciee ada yang nambah umur di akhir taun iniii.🐬🩵🐼
+const MESSAGE = `Barakallahu fi umrikk dekk🥳🥳. Ciee.. ada yang ulang tahunn uhuyyy, ada yangg nambahh umurnyaa.
 
-Semogaa dengan bertambah nyaa umurr dedekk, dedekk bisa makinn dekatt sama Allah, rajin ibadah, rajin sedekah, slalu nolong orng, berbuat baikk, sayangg abi and umii, sayangg keluargaa🩵🫂🥰 Semoga makinn cemungutt kedepann nya, semakinn baikk, lantakk lajuu, hantamm smuanyaa💪🏻💪🏻 dek kerenn bisa survive sampai akhir tahun 2025 yang sangatt luar biasa beratt, bigg hugg dlu🫂🫂. 
+Mogaa dengan nambah umurr ke bisa makinn baik kedepannya, dekat sama Allah, rajin ibadah, rajin sedekah, selalu nolong orng, selalu buat baikk, sayangg ayah sama mimii, sayang keluarga🩵. Semoga makin semangatt yaa kedepannya semakin baikk, makin berkembang💪🏻💪🏻Ke kerenn udh berhasil ngelewatin dan bertahan sampe akhir 2025 nii.
 
-Pesan babangg jaga dirii yaaw, jagaa kesehatann, rawatt diriii, kasiann ama badaannya teyy, istirahatt yg ckupp teyy, makann tepatt waktuu jgn telatt" minumm jgn yg anehh"😠, minum nya air putiss sahajaa. Klo capek istirahatt, healingg tapi jan kebanyakann, mager nnti ke😒. Fokuss ke kuliahh nyaa teyy, klo da lomba" kegiatann" pendaftaran" lantakk lajuu tross sabett smua juaraanya jan maluww", kan dh gada lagi abg jdi gada siapa yg kekangg, dek bebas kembanginn diri dekk😊😊
+Pesan aku ya gabanyak, jaga diri, jaga kesehatann, istirahatt yang ckupp ya, jgn paksain diri, ga semua hal juga harus dipendam sendiri, makan minum yang sehat dan tepat waktu. Fokus sekolah ke, krn bntr lagi udh mau snbt. Klo dah capek tuh istirahatt.
 
-Abg jg minta maaf sebesarr" nyaa se gedee"nya. Abg tau abg banyak salah sama dek bahkan sampai detik ini abg masih bersalah sama dek, abg gabisa kasih apa" buat dek, abg bkn apa" bkn siapa" bkn keluarga terpandang apalagi kayaraya. Abg cmn bisa kasih ini buat dedek tercintahh🥹 maap yaa, ga seberapaa ga se wahh cwok lain ga semahal cwok lainn. Cwok lain bisa bahagiain cwek nya dgn tulus, hadiahin cwek nya IP tpi abg cmn bisa effort hal kyk gini. Sekali lagi bg minta maaff😔. Dan terimakasih buat dedek yang udh hadir di kehidupan abg yg ga seberapa ini menjadi pelengkap bgi abg🥹😚. Makasih banyaa yaa dekk. Love u🩵
+Aku jg minta maaf sebesar besar nya, aku tau aku banyak salah sama ke, mau itu sengaja ataupun engga, aku tau aku udh banyak buat ke gaenakan ataupun sedih, bahkan mngkn sampai detik ini aku masih punya salah sama ke, jdi aku minta maaf sebesar besarnya. Maaf jg aku gabisa kasih apa apa buat ke, padahal ke lgi ultah yakan. Aku cmn bisa effort buatin ginian, aku jg mau ucapin makasih banyak ya atas semua hal dari awal kita kenal sampai detik ini, aku merasa banyak berhutang sama ke.
 
-Ur lumbaa🩵🐬`;
+Ur pity, Zain's✨`;
 
 // Lightweight progressive reveal (chunked) to keep performance
 (function showMessage(){
@@ -31,7 +31,7 @@ function spawnHearts(){
     h.className = 'heart';
     h.style.left = Math.random()*90 + 'vw';
     h.style.animationDuration = (4 + Math.random()*4) + 's';
-    h.textContent = ['💙','🐼','🐬','💌'][Math.floor(Math.random()*4)];
+    h.textContent = ['💙','🤩','🎂','💌'][Math.floor(Math.random()*4)];
     document.body.appendChild(h);
     setTimeout(()=>h.remove(), 7000);
   }
@@ -40,7 +40,7 @@ function spawnHearts(){
 // Continuous floating emojis (panda, dolphin, blue hearts)
 (function floaters(){
   const pool = document.getElementById('floaters');
-  const emojis = ['🐼','🐬','💙','💌','🩵'];
+  const emojis = ['🤩','🎂','💙','💌','🩵'];
   setInterval(()=>{
     const e = document.createElement('div');
     e.className = 'floater';
